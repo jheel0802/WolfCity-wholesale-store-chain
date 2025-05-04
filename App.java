@@ -14,15 +14,15 @@ public class App {
 
 
     //-----------------------------------------------------------------------
-    static final String jdbcURL = ""; //jdbc url
+    static final String jdbcURL = ""; // add jdbc url here
     public static class GoToMainMenuException extends RuntimeException {}
    // Main Function starts here
     public static void main(String[] args) {
 
         try{
             Class.forName("org.mariadb.jdbc.Driver");
-            String user = ""; //user
-            String passwd = ""; //userpass
+            String user = ""; //add user here
+            String passwd = ""; //add pass here
             conn = DriverManager.getConnection(jdbcURL, user, passwd);
             mainMenu();
             
